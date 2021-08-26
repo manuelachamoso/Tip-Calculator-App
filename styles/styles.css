@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #C5E4E7 ;
+}
+
+.calculator-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.logo {
+    margin: 5rem 0 3.5rem 0;
+}
+
+.calculator-card {
+    background-color: #ffff;
+    width: 50%;
+   height: auto;
+    border-top-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.5rem
+}
+
+.calculator-card .input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.calculator-card .input .label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+}
+
+.calculator-card .input .label-wrapper label {
+    color: #5E7A7D;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.calculator-card .input .label-wrapper .error-msg {
+    color: indianred;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.calculator-card .input .inp-text {
+    background-color: #F4FAFA;
+    border: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: #00494D;
+    font-family: 'Space Mono', monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: right;
+    padding: 0.5rem 2.4rem;
+}
+
+.calculator-card .input .inp-text:focus {
+    outline: none;
+    border: 2px solid #31B4A3;
+}
+
+.calculator-card .input .inp-wrapper {
+    position: relative;
+}
+
+.calculator-card .input .inp-wrapper img {
+    position: absolute;
+    left: 2.4rem;
+    top: 1.5rem;
+}
+
+.calculator-card .input .btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1.2rem;
+}
+
+.calculator-card .input .btn-wrapper .btn {
+    width: 46%;
+    text-align: center;
+    background-color: #00494D;
+    color: #ffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0;
+    transition: all 0.5 ease;
+}
+
+.calculator-card .input .btn-wrapper .btn:hover {
+    background-color:rgb(106, 197, 186);
+}
+
+.calculator-card .input .btn-wrapper .btn-active {
+    background-color: #31B4A3;
+    color: #00494D;
+}
+
+.calculator-card .input .btn-wrapper .inp-text {
+    width: 46%;
+}
+
+.calculator-card .output {
+    background-color:  #00494D;
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 2.2rem;
+}
+
+.calculator-card .output .line-wrapper .line-output {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.4rem 0 2.4rem 0;
+}
+
+.calculator-card .output .line-wrapper .title {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.calculator-card .output .line-wrapper .desc {
+    color: #7F9C9F;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.calculator-card .output .line-wrapper .value {
+    color: #31B4A3;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.calculator-card .output .btn {
+    width: 100%;
+    background-color: #31B4A3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00494D;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    margin-top: 3.4rem;
+    transition: all 0.5 ease;
+}
+
+.calculator-card .output .btn:hover {
+    background-color:rgb(106, 197, 186);
+}
+
+@media screen and (min-width: 1440px) {
+    .calculator-card {
+        width: 64%;
+        flex-direction: row;
+        border-radius: 2.5rem;
+        align-items: stretch;
+        padding: 3.4rem;
+        gap: 1.5rem;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .calculator-card .input {
+        width: 105%;
+        padding: 0 3.5rem 1.5rem 1.5rem;
+    }
+
+    .calculator-card .input .label-wrapper {
+        padding: 1rem 0;
+    }
+
+    .calculator-card .input .btn-wrapper .btn{
+        width: 30.5%;
+    }
+
+    .calculator-card .input .btn-wrapper .inp-text {
+        width: 30.5%;
+    }
+
+    .calculator-card .output {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+    .calculator-card .output .line-wrapper .line-output {
+        margin: 0.5rem 0 2.4rem 0;
+    }
+
+    .calculator-card .output .line-wrapper .value {
+        font-size: 4.6rem;
+    }
+    
+
+}  
