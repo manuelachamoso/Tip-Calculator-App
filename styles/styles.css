@@ -28,7 +28,7 @@ body {
 
 .calculator-card {
     background-color: #ffff;
-    width: 50%;
+    width: 100%;
    height: auto;
     border-top-right-radius: 2.5rem;
     border-top-left-radius: 2.5rem;
